@@ -3,10 +3,15 @@
     padding: 0;
     font-family: 'Poppins' , sans-serif;
     box-sizing: border-box;
+    
 }
 
-body {
+.box {
     background: linear-gradient(135deg,blue , red );
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+   
 }
 
 .container {
@@ -17,9 +22,10 @@ body {
     background-size: cover;
     background-position: center;
     text-align: center;
-    padding: 40px 0;
+    padding: 40px 2px;
     color: white;
-    margin: 200px auto 0;
+    
+    margin: 80px auto;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
