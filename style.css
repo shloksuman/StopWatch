@@ -96,7 +96,7 @@
     left: 50%;
     /* transform: translateX(-50%); */
     
-    transform: translate(-20px, 100px);
+    transform: translate(-20px, 110px);
     
     opacity: 0;
     transition: opacity 0.3s;
