@@ -20,18 +20,50 @@ function stopwatch(){
 }
 
 function watchStart(){
+    // Add the "enlarged" class when the image is clicked
+    document.querySelector('.buttons img[src="images/start.png"]').classList.add('enlarged');
+
+    // Set a timeout to remove the "enlarged" class after 3 seconds
+    setTimeout(function () {
+         document.querySelector('.buttons img[src="images/start.png"]').classList.remove('enlarged');
+    }, 150);
+
+    //FUNCTIONALITY
+
     if(timer!= null){
         clearInterval(timer);
     }
-   timer = setInterval(stopwatch,1000);
+
+    timer = setInterval(stopwatch,1000);
 }
 
 function watchStop(){
+    // Add the "enlarged" class when the image is clicked
+    document.querySelector('.buttons img[src="images/stop.png"]').classList.add('enlarged');
+
+    // Set a timeout to remove the "enlarged" class after 3 seconds
+    setTimeout(function () {
+         document.querySelector('.buttons img[src="images/stop.png"]').classList.remove('enlarged');
+    }, 150);
+
+    //FUNCTIONALITY
+
     clearInterval(timer);
 }
 
 function watchReset(){
+    // Add the "enlarged" class when the image is clicked
+    document.querySelector('.buttons img[src="images/reset.png"]').classList.add('enlarged');
+
+    // Set a timeout to remove the "enlarged" class after 3 seconds
+    setTimeout(function () {
+        document.querySelector('.buttons img[src="images/reset.png"]').classList.remove('enlarged');
+    }, 150);
+
+
+    // FUNCTIONALITY
     clearInterval(timer);
     [seconds, minutes, hours] = [0,0,0];
     displayTime.innerHTML = "00:00:00";
 }
+
