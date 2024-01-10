@@ -50,9 +50,9 @@
     cursor: pointer;
 }
 
-.buttons img:nth-child(2) {
+/* .buttons img:nth-child(2) {
     width: 88px;
-}
+} */
 
 /* .enlarge-on-click {
     transition: all 4s ease;
@@ -74,7 +74,7 @@
 }
 
 
-/* TOOLTIP EFFECT CSS */
+/* TOOLTIP EFFECT CSS  */
 
 /* Add this CSS class for the tooltip */
 .tooltip {
